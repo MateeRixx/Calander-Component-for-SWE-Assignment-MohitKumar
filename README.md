@@ -38,4 +38,5 @@ If you'd like to test this out on your own machine, it's super easy:
 
 Enjoy the calendar will be waiting for you! 
 
-Thanks for taking the time to review my project. I had a lot of fun building it! 
+Checkout at:https://calander-component-for-swe-assignme.vercel.app/
+Demo shown: https://youtu.be/xqb5SvxYcpg
