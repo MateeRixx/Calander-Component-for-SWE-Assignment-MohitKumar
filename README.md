@@ -1,37 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗓️ Interactive Wall Calendar
 
-## Getting Started
+Hey there! 👋 This is my submission for the Frontend Engineering Challenge. 
 
-First, run the development server:
+I set out to build a beautiful, interactive calendar component that actually feels like a physical wall calendar you'd hang up in your office or room. It has a clean layout, is easy to use, and includes some fun extra features! 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌟 What I Built
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Here are the main features of the calendar:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*   **Physical Calendar Feel:** I designed it with a large "hero" image covering the left side that changes every month. I even added a subtle paper texture and small "binder rings" at the top to give it that authentic, real-world wall calendar aesthetic.
+*   **Day & Range Selection:** You can pick a specific date or select a start and end date for a multi-day range. Single-day selections highlight with a blue circular badge, while range boundaries (start and end) highlight in red to keep things visually distinct and easy to read.
+*   **Integrated Sticky Notes:** There's a handy side panel for notes! You can write memos and attach them to a single day, a range of days (like a vacation), or just save a general thought for the month. **Important:** Your notes are automatically saved directly in your browser (`localStorage`), so they won't disappear if you refresh the page!
+*   **Mobile Friendly:** Try pulling it up on your phone! The component handles different screen sizes beautifully. On a desktop, it sits elegantly side-by-side. On mobile screens, the image and calendar naturally stack on top of the notes section without breaking.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ A Little Extra Magic (Creative Liberty)
+I wanted to go slightly above and beyond the baseline requirements, so I added:
+1.  **3D Page Flipping:** When you navigate between months, the calendar performs a smooth 3D page-flip animation, just like turning the page of a real calendar.
+2.  **Smart Auto-Tagging:** When you type a memo, the app reads your text. If it sees words like "meet" or "call", it tags it as a `SCHEDULE`. Words like "deadline" or "remember" get tagged as a `REMINDER`, and general thoughts get tagged as a `REFLECTION`.
 
-## Learn More
+## 🛠️ Built With
 
-To learn more about Next.js, take a look at the following resources:
+I wanted to keep the codebase clean and avoid over-engineering. I focused strictly on frontend code:
+*   **React & Next.js:** For the core component logic and layout.
+*   **Framer Motion:** To create the buttery-smooth flipping animations.
+*   **Date-fns:** To do all the heavy lifting for date math (figuring out leap years, days in a month, etc.) without writing messy custom logic.
+*   **Vanilla CSS Modules:** No heavy CSS frameworks were used for the component styling! Just plain, scoped CSS to keep things lightweight.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 How to Run It Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+If you'd like to test this out on your own machine, it's super easy:
 
-## Deploy on Vercel
+1. Clone this repository to your computer.
+2. Open your terminal and navigate to the project folder (`calendar-app`).
+3. Run `npm install` to download the packages.
+4. Run `npm run dev` to start the development server.
+5. Open your browser and go to `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Enjoy the calendar will be waiting for you! 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Calander-Component-for-SWE-Assignment-MohitKumar
+Thanks for taking the time to review my project. I had a lot of fun building it! 
